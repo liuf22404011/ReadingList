@@ -14,9 +14,11 @@ java {
 }
 
 repositories {
-//    mavenCentral()            // 外网Maven仓库链接不稳定，构建报错
-    // 或者阿里云镜像（国内推荐）
+    // 阿里云镜像（国内推荐）
     maven { url 'https://maven.aliyun.com/repository/public' }
+    // 外网Maven仓库链接不稳定，构建报错
+    mavenCentral()
+
 }
 
 dependencies {
